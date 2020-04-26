@@ -11,7 +11,7 @@ tools {
 			steps
 			{
 			checkout([$class: 'GitSCM', branches: [[name: '*']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Sai6696/Test.git']]])
-			properties([pipelineTriggers([pollSCM('* * * * *')])])
+			//properties([pipelineTriggers([pollSCM('* * * * *')])])
             }
 		}
 		
